@@ -3,20 +3,37 @@ package com.javalearning;
 
 public class Stringdemo {
 
-        //write down the area oof circle,square, rectangle, ask user to provider measurements
-        //write down a program to read info about user and print thee age, gender and class
-        //find out which java package iis used for file handling, mathematical function
+    public static void makeOutWord(String out, String word) {
+        System.out.println(out.substring(0, 2) + word + out.substring(2, 4));
+    }
 
-public static void main(String[]args) {
-    String str = "the sun rises in the east";
-      str.split(" ");
-    StringBuilder stringBuilder=new StringBuilder(str);
-    StringBuilder reverseStr= stringBuilder.reverse();
-
-}
-
-     //string is class in java and it has lot of function using which we can manupulate the string object
+    public static String extraEnd(String str) {
+        int len = str.length();
+        System.out.println(len);
+        String temp = str.substring(len - 2, len);
+        System.out.println(temp);
+        return (temp + temp + temp);
+        //System.out.println(stringTest);
 
     }
+
+
+    public static void reverseOfString(String str) {
+        str.split(" ");
+        StringBuilder stringBuilder = new StringBuilder(str);
+        StringBuilder reverseStr = stringBuilder.reverse();
+    }
+
+
+    public static void main(String[] args) {
+
+        //makeOutWord("[[]]","hello");
+        extraEnd("hello");
+
+    }
+
+    //string is class in java and it has lot of function using which we can manipulate the string object
+
+}
 
 

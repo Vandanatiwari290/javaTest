@@ -16,7 +16,5 @@ public class ConvertCharToString {
          char d= name.charAt(i);
       }
 
-
-
     }
 }

@@ -1,23 +1,23 @@
 package com.javalearning;
 
 public class INtegerPalindrom {
-    public static void main(String[]args) {
-        int n=121,reverse=0,s;
-        int t=n;
+    public static void main(String[] args) {
+        int n = 121, reverse = 0, s;
+        int t = n;
 
-        while (n>0) {
+        while (n > 0) {
             s = n % 10;
             n = n / 10;
-            reverse = reverse*10 + s;
+            reverse = reverse * 10 + s;
 
         }
-        if (t==reverse){
+        if (t == reverse) {
             System.out.println("palindrom");
 
-        }else {
+        } else {
             System.out.println("Not palindrom");
         }
 
 
     }
-    }
+}
